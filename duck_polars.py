@@ -21,12 +21,12 @@ print(f"Time: {toc - tic}")
 # %%
 # Let's do the same with DuckDB
 
-# Turn the paqrquet files into a DuckDB table
-con = ddb.connect("nyc_taxi.ddb")
-# Write the parquet files to a table
-con.sql("CREATE TABLE nyc_taxi AS SELECT * FROM read_parquet('nyc-taxi/**/*.parquet')")
+# # Turn the paqrquet files into a DuckDB table
+# con = ddb.connect("nyc_taxi.ddb")
+# # Write the parquet files to a table
+# con.sql("CREATE TABLE nyc_taxi AS SELECT * FROM read_parquet('nyc-taxi/**/*.parquet')")
 
-# # Alternatively: Register the parquet files as a table
+# # # Alternatively: Register the parquet files as a table
 # con.sql("CREATE VIEW nyc_taxi AS SELECT * FROM read_parquet('nyc-taxi/2012/*.parquet')")
 
 # %%
