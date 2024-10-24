@@ -1,0 +1,7 @@
+name: ddb_polars
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - polars
+  - duckdb
