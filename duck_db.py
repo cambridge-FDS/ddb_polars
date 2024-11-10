@@ -2,7 +2,6 @@
 import duckdb as ddb
 import polars as pl
 import time
-import ibis
 
 # %%
 # Let's load NYC taxi dataset with Polars
